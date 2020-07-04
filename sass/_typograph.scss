@@ -1,0 +1,32 @@
+.heading {
+    @include position-centre;
+    width: 55%;
+    text-align: center;
+
+    @include respond(tab-port) {
+        width: 85%;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
+
+    &__primary {
+        font-size: 3.5rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        padding: 0 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+#email {
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+}

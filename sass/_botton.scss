@@ -1,0 +1,33 @@
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    @include respond(tab-port) {
+        padding: .8rem 1.5rem;
+    }
+
+    &-white {
+        background-color: $color-primary;
+        color: $color-blue;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $color-blue;
+            color: $color-primary;
+        }
+    }
+
+    &-blue {
+        background-color: $color-blue;
+        color: $color-primary;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-blue;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 57.5%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 77%; } }
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #f7f7f7; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+  .nav__right {
+    font-size: 2.5rem; }
+  .nav__left {
+    width: 58%;
+    margin-top: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .nav__left {
+        width: 65%; } }
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+  .list__item-link {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600; }
+    @media only screen and (max-width: 75em) {
+      .list__item-link {
+        display: none; } }
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: .4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600; }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: .8rem 1.5rem; } }
+  .btn-white {
+    background-color: #f7f7f7;
+    color: #5300b3;
+    transition: all .3s; }
+    .btn-white:hover {
+      background-color: #5300b3;
+      color: #f7f7f7; }
+  .btn-blue {
+    background-color: #5300b3;
+    color: #f7f7f7;
+    transition: all .3s; }
+    .btn-blue:hover {
+      background-color: #f7f7f7;
+      color: #5300b3; }
+
+.header {
+  margin: 1.5rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(177deg, rgba(83, 0, 179, 0.9) 0%, rgba(83, 0, 179, 0.9) 50%, rgba(202, 186, 219, 0.9) 50%);
+  padding: 8rem; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      padding: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      padding: 3rem; } }
+  .header__page {
+    height: 75rem;
+    border-radius: 1.2rem;
+    background-color: #ffffff;
+    padding: 2rem 6rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; }
+    @media only screen and (max-width: 75em) {
+      .header__page {
+        padding: 2rem 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__page {
+        padding: 1rem; } }
+    .header__page::before {
+      content: "";
+      background-color: #7b00b4;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 80%, 0 70%);
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+
+.page1 {
+  width: 30rem;
+  position: absolute;
+  top: 42rem;
+  left: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+  z-index: 20; }
+  @media only screen and (max-width: 56.25em) {
+    .page1 {
+      display: none; } }
+
+.page2 {
+  width: 30rem;
+  position: absolute;
+  top: 49rem;
+  left: 26rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+  z-index: 40; }
+  @media only screen and (max-width: 56.25em) {
+    .page2 {
+      position: absolute;
+      top: 46rem;
+      left: 16rem;
+      z-index: 10; } }
+  @media only screen and (max-width: 37.5em) {
+    .page2 {
+      position: absolute;
+      top: 48rem;
+      left: 8rem; } }
+
+.page3 {
+  width: 13rem;
+  position: absolute;
+  top: 47.2rem;
+  left: 67rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+  z-index: 30; }
+  @media only screen and (max-width: 56.25em) {
+    .page3 {
+      position: absolute;
+      top: 52rem;
+      left: 38rem;
+      z-index: 20; } }
+  @media only screen and (max-width: 37.5em) {
+    .page3 {
+      position: absolute;
+      top: 50rem;
+      left: 26rem; } }
+
+.img {
+  width: 100%;
+  height: 100%; }
+
+.heading {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .heading {
+      width: 85%; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading {
+      width: 100%; } }
+  .heading__primary {
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem; }
+  .heading__text {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem; }
+
+#email {
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
+  margin-right: 1rem;
+  border-radius: .5rem; }

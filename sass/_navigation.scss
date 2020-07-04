@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__right {
+        font-size: 2.5rem;
+    }
+
+    &__left {
+        width: 58%;
+        margin-top: 1rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+    }
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        &-link {
+            color: $color-primary;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            @include respond(tab-land) {
+                display: none;
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+.page1 {
+    width: 30rem;
+    position: absolute;
+    top: 42rem;
+    left: 40rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2rem rgba($color-black, .5);    
+    z-index: 20;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+.page2 {
+    width: 30rem;
+    position: absolute;
+    top: 49rem;
+    left: 26rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2rem rgba($color-black, .5); 
+    z-index: 40;
+
+    @include respond(tab-port) {
+        position: absolute;
+        top: 46rem;
+        left: 16rem;
+        z-index: 10;
+    }
+
+    @include respond(phone) {
+        position: absolute;
+        top: 48rem;
+        left: 8rem;
+    }
+}
+
+.page3 {
+    width: 13rem;
+    position: absolute;
+    top: 47.2rem;
+    left: 67rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2rem rgba($color-black, .5); 
+    z-index: 30;
+
+    @include respond(tab-port) {
+        position: absolute;
+        top: 52rem;
+        left: 38rem;
+        z-index: 20;
+    }
+
+    @include respond(phone) {
+        position: absolute;
+        top: 50rem;
+        left: 26rem;
+    }
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
